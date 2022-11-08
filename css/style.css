@@ -1,0 +1,254 @@
+/*Обнуление*/
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img{
+    vertical-align:top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit; 
+    font-weight: inherit;
+}
+html, body {
+    height: 100%;
+    font-family: montserrat;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    background-color: rgb(200, 200, 200);
+}
+hr {
+    border-bottom: 5px solid #1e2939
+}
+
+/*--------------------ОБЕРТКА--------------------------------------*/
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*--------------------КОНТЕЙНЕР--------------------------------------*/
+
+._container {
+    /* background-color: #fff; */
+    max-width: 1000px;
+    margin: 0px auto; /*выставить блок по центру*/
+    box-sizing: content-box; /*чтобы padding не влиял на ширину контента max-width: 1046px;*/
+    padding: 0px 15px; /*чтобы при сужении экрана контент не прилипал к краю экрана*/
+}
+
+/*--------------------main-block__container--------------------------------------*/
+
+.page__main-block {
+    margin: 50px 0 0 0;
+}
+.main-block {
+
+}
+.main-block__container {
+}
+.main-block__body{
+    display: flex;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+}
+.main-block__sidebar {
+}
+
+
+
+/*--------------------SIDEBAR--------------------------------------*/
+.sidebar {
+    flex: 0 0 33.333%;
+    background-color: #1e2939;
+    height: auto;
+    /* padding: 10px; */
+}
+.sidebar__photo {
+
+}
+._ibg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 50% 0 50% 0;
+    /* border-radius: 0 50% 0 50% ; */
+}
+
+.sidebar__body {
+
+}
+.body-sidebar {
+    padding: 20px;
+}
+.body-sidebar__contacts {
+
+}
+.contacts {
+    padding: 0 0 40px 0;
+}
+.contacts__title {
+    color: #fff;
+    font-size: 1.5em;
+    line-height: calc(24 / 22 * 100%);
+    font-weight: 700;
+    padding: 0 0 10px 0;
+}
+.contacts__list {
+    line-height: calc(20 / 14 * 100%);
+}
+.contacts__phone {
+}
+.contacts__phone:before {
+    color: rgb(78, 248, 86);
+}
+.contacts__link {
+    color: #a9abaf;
+    border-bottom: 1px solid #a9abaf;
+    /* text-decoration: underline; */
+}
+.contacts__email {
+}
+.contacts__email::before {
+    color: #ff6b08;
+}
+.contacts__fb {
+}
+.contacts__fb::before {
+    color: rgb(92, 125, 235);
+}
+
+
+
+.body-sidebar__tech-skils {
+}
+.body-sidebar__soft-skils {
+}
+.skils:not(:last-child) {
+    padding: 0 0 40px 0;
+}
+.skils__title {
+    color: #fff;
+    font-size: 1.5em;
+    line-height: calc(24 / 22 * 100%);
+    font-weight: 700;
+    padding: 0 0 10px 0;
+}
+.skils__list {
+    color: #ff6b08;
+    line-height: calc(20 / 14 * 100%);
+}
+.skils__item {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.skils__text {
+    color: #fff;
+}
+
+
+
+
+/*--------------------CONTANT--------------------------------------*/
+
+
+.main-block__info {
+}
+.info {
+    flex: 0 1 100%;
+    background-color: #fff;
+}
+
+
+/*--------------------about-me--------------------------------------*/
+
+.info__about-me {
+    padding: 30px 30px 30px 30px;
+}
+.about-me__sub-title {
+    font-weight: 700;
+    padding: 0 0 30px 0;
+}
+.about-me__title {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0 0 30px 0;
+}
+.about-me__text {
+    text-align: justify;
+    line-height: calc(20 / 14 * 100%);
+}
+
+/*--------------------Education--------------------------------------*/
+
+.info__education {
+    padding: 30px 30px 30px 30px;
+}
+.education__title {
+    color: #252B42;
+    font-size: 1.5em;
+    line-height: calc(24 / 14 * 100%);
+    font-weight: 700;
+    padding: 0 0 10px 0;
+    text-decoration: underline;
+}
+.education__body {
+}
+.body-education {
+}
+.body-education__block {
+    line-height: calc(24 / 14 * 100%);
+    margin: 0px -15px;
+}
+.body-education__block:not(:last-child) {
+    margin-bottom: 20px;
+}
+.block__university {
+    color: #ff6b08;
+    font-weight: 700;
+    padding: 0px 15px;    
+}
+.block__faculty {
+
+}
+.faculty-block {
+    display: flex;
+    padding: 0px 15px;
+}
+.faculty-block p:not(:last-child) {
+    padding: 0px 5px 0 0;
+}
+.faculty-block__title {
+    flex: 1 1 55%;
+    color: #252B42;
+    font-weight: 700;
+}
+.faculty-block__time-interval {
+    flex: 1 1 35%;
+}
+.faculty-block__country{
+    flex: 1 1 10%;
+    border-left: 2px solid #252B42;
+    padding-left: 5px;
+}
+
+
+
+/*--------------------projects--------------------------------------*/
+
