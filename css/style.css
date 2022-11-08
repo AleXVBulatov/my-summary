@@ -50,6 +50,17 @@ hr {
     box-sizing: content-box; /*чтобы padding не влиял на ширину контента max-width: 1046px;*/
     padding: 0px 15px; /*чтобы при сужении экрана контент не прилипал к краю экрана*/
 }
+._title {
+    color: #252B42;
+    font-size: 1.5em;
+    line-height: calc(24 / 14 * 100%);
+    font-weight: 700;
+    padding: 0 0 10px 0;
+    text-decoration: underline;
+}
+._inner-container {
+    margin: 30px 30px 30px 30px;
+}
 
 /*--------------------main-block__container--------------------------------------*/
 
@@ -116,7 +127,7 @@ hr {
 .contacts__phone {
 }
 .contacts__phone:before {
-    color: rgb(78, 248, 86);
+    color: rgb(48, 146, 53);
 }
 .contacts__link {
     color: #a9abaf;
@@ -198,22 +209,17 @@ hr {
 /*--------------------Education--------------------------------------*/
 
 .info__education {
-    padding: 30px 30px 30px 30px;
+}
+.education {
 }
 .education__title {
-    color: #252B42;
-    font-size: 1.5em;
-    line-height: calc(24 / 14 * 100%);
-    font-weight: 700;
-    padding: 0 0 10px 0;
-    text-decoration: underline;
 }
 .education__body {
 }
 .body-education {
 }
 .body-education__block {
-    line-height: calc(24 / 14 * 100%);
+    line-height: calc(20 / 14 * 100%);
     margin: 0px -15px;
 }
 .body-education__block:not(:last-child) {
@@ -249,6 +255,50 @@ hr {
 }
 
 
+/*--------------------WORK--------------------------------------*/
+
+.info__work {
+}
+.work__title {
+}
+.work__body {
+}
+.body-work {
+}
+.body-work__block-work {
+    line-height: calc(20 / 14 * 100%);
+}
+.block-work__title {
+    font-weight: 700;
+}
+.block-work__title a{
+    color: #ff6b08;
+    text-decoration: underline;
+}
+.block-work__text {
+    display: flex;
+    font-style: italic;
+    padding: 5px 0 5px 0;
+}
+.text__interval {
+    flex: 0 0 200px;
+    padding-right: 5px;
+}
+.text__country {
+    flex: 0 0 auto;
+    border-left: 2px solid #252B42;
+    padding-left: 5px;
+}
+.block-work__list {
+    color: #ff6b08;
+}
+.block-work__item {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.block-work__item span {
+    color: #252B42;  
+}
 
 /*--------------------projects--------------------------------------*/
 
