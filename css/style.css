@@ -135,10 +135,11 @@ hr {
     color: rgb(121, 252, 128);
 }
 .contacts__link {
-    color: #a9abaf;
+    /* color: #a9abaf; */
+    color: #fff;
     /* border-bottom: 1px solid #a9abaf; */
     text-decoration: underline;
-    font-style: italic;
+    /* font-style: italic; */
 }
 .contacts__email {
 }
@@ -325,9 +326,11 @@ hr {
     list-style-position: inside;
 }
 .block-projects__item a{
-    color: #252B42;
+    color: #ff6b08;
+    font-weight: 700;
+    /* color: #252B42; */
     text-decoration: underline;
-    font-style: italic;
+    /* font-style: italic; */
     
 }
 
