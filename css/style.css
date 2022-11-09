@@ -31,7 +31,7 @@ html, body {
     background-color: rgb(200, 200, 200);
 }
 hr {
-    border-bottom: 5px solid #1e2939
+    border-bottom: 5px solid #1e2939;
 }
 
 /*--------------------ОБЕРТКА--------------------------------------*/
@@ -55,7 +55,7 @@ hr {
     font-size: 1.5em;
     line-height: calc(24 / 14 * 100%);
     font-weight: 700;
-    padding: 0 0 10px 0;
+    padding: 0 0 15px 0;
     text-decoration: underline;
 }
 ._inner-container {
@@ -65,7 +65,7 @@ hr {
 /*--------------------main-block__container--------------------------------------*/
 
 .page__main-block {
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
 }
 .main-block {
 
@@ -75,6 +75,7 @@ hr {
 .main-block__body{
     display: flex;
     box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 .main-block__sidebar {
 }
@@ -100,13 +101,13 @@ hr {
     object-fit: cover;
     border-radius: 50% 0 50% 0;
     /* border-radius: 0 50% 0 50% ; */
-}
-
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}   
 .sidebar__body {
 
 }
 .body-sidebar {
-    padding: 20px;
+    padding: 40px 20px 40px 20px;
 }
 .body-sidebar__contacts {
 
@@ -122,17 +123,22 @@ hr {
     padding: 0 0 10px 0;
 }
 .contacts__list {
-    line-height: calc(20 / 14 * 100%);
+    line-height: calc(24 / 14 * 100%);
 }
+.contacts__list li{
+    /* padding: 5px 0; */
+}
+
 .contacts__phone {
 }
 .contacts__phone:before {
-    color: rgb(48, 146, 53);
+    color: rgb(121, 252, 128);
 }
 .contacts__link {
     color: #a9abaf;
-    border-bottom: 1px solid #a9abaf;
-    /* text-decoration: underline; */
+    /* border-bottom: 1px solid #a9abaf; */
+    text-decoration: underline;
+    font-style: italic;
 }
 .contacts__email {
 }
@@ -142,7 +148,7 @@ hr {
 .contacts__fb {
 }
 .contacts__fb::before {
-    color: rgb(92, 125, 235);
+    color: rgb(45, 119, 255);
 }
 
 
@@ -163,7 +169,7 @@ hr {
 }
 .skils__list {
     color: #ff6b08;
-    line-height: calc(20 / 14 * 100%);
+    line-height: calc(24 / 14 * 100%);
 }
 .skils__item {
     list-style-type: disc;
@@ -190,7 +196,6 @@ hr {
 /*--------------------about-me--------------------------------------*/
 
 .info__about-me {
-    padding: 30px 30px 30px 30px;
 }
 .about-me__sub-title {
     font-weight: 700;
@@ -207,7 +212,6 @@ hr {
 }
 
 /*--------------------Education--------------------------------------*/
-
 .info__education {
 }
 .education {
@@ -268,6 +272,9 @@ hr {
 .body-work__block-work {
     line-height: calc(20 / 14 * 100%);
 }
+.body-work__block-work:not(:last-child) {
+    margin: 0 0 20px 0;
+}
 .block-work__title {
     font-weight: 700;
 }
@@ -281,7 +288,7 @@ hr {
     padding: 5px 0 5px 0;
 }
 .text__interval {
-    flex: 0 0 200px;
+    flex: 0 0 220px;
     padding-right: 5px;
 }
 .text__country {
@@ -302,3 +309,84 @@ hr {
 
 /*--------------------projects--------------------------------------*/
 
+.info__projects {
+}
+.projects__title {
+}
+.body-projects__block-projects {
+    
+}
+.block-projects__list {
+    color: #ff6b08;
+    line-height: calc(24 / 14 * 100%);    
+}
+.block-projects__item {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.block-projects__item a{
+    color: #252B42;
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+
+/*--------------------Additional Information--------------------------------------*/
+
+.info__additional {
+}
+.additional__title {
+}
+.body-additional__block-additional {
+    line-height: calc(20 / 14 * 100%);
+}
+.block-additional__list {
+    color: #ff6b08;
+}
+.block-additional__item {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.block-additional__item span{
+    color: #252B42;
+}
+
+/*--------------------Адаптив--------------------------------------*/
+
+
+@media (max-width: 1024px) {
+    .page__main-block {
+        margin: 15px 0 15px 0;
+    }
+    .main-block__body{
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+@media (max-width: 768px) {
+    .sidebar {
+        flex: 0 0 245px;
+    }
+}
+@media (max-width: 600px) {
+    .main-block__body{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        flex: 0 0 100%;        
+    }
+    .info {
+        flex: 0 0 100%;
+    }
+}
+@media (max-width: 450px) {
+    .page__main-block {
+        margin: 0;
+    }
+    ._container {
+        padding: 0;
+    }
+    ._inner-container {
+        margin: 20px 20px 20px 20px;
+    }
+}
