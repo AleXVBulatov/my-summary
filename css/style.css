@@ -252,11 +252,13 @@ hr {
 }
 .faculty-block__time-interval {
     flex: 1 1 35%;
+    color:rgb(180, 180, 180);
 }
 .faculty-block__country{
     flex: 1 1 10%;
     border-left: 2px solid #252B42;
     padding-left: 5px;
+    color:rgb(180, 180, 180);
 }
 
 
@@ -285,7 +287,8 @@ hr {
 }
 .block-work__text {
     display: flex;
-    font-style: italic;
+    /* font-style: italic; */
+    color:rgb(180, 180, 180);
     padding: 5px 0 5px 0;
 }
 .text__interval {
