@@ -36,6 +36,9 @@ hr {
 
 /*--------------------ОБЕРТКА--------------------------------------*/
 
+:root {
+    --orange-color: #ff6b08;
+}
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -87,10 +90,10 @@ hr {
     flex: 0 0 33.333%;
     background-color: #1e2939;
     height: auto;
+    overflow: hidden;
     /* padding: 10px; */
 }
 .sidebar__photo {
-
 }
 ._ibg {
     position: relative;
@@ -100,8 +103,8 @@ hr {
     left: 0;
     object-fit: cover;
     border-radius: 50% 0 50% 0;
-    /* border-radius: 0 50% 0 50% ; */
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    /* border-radius: 0% 50% 0% 50% ; */
+    box-shadow: 0px 0px 00px 3px rgba(255, 107, 0, 1);
 }   
 .sidebar__body {
 
@@ -144,7 +147,7 @@ hr {
 .contacts__email {
 }
 .contacts__email::before {
-    color: #ff6b08;
+    color: var(--orange-color);
 }
 .contacts__fb {
 }
@@ -169,7 +172,7 @@ hr {
     padding: 0 0 10px 0;
 }
 .skils__list {
-    color: #ff6b08;
+    color: var(--orange-color);
     line-height: calc(24 / 14 * 100%);
 }
 .skils__item {
@@ -231,7 +234,7 @@ hr {
     margin-bottom: 20px;
 }
 .block__university {
-    color: #ff6b08;
+    color: var(--orange-color);
     font-weight: 700;
     padding: 0px 15px;    
 }
@@ -282,7 +285,7 @@ hr {
     font-weight: 700;
 }
 .block-work__title a{
-    color: #ff6b08;
+    color: var(--orange-color);
     text-decoration: underline;
 }
 .block-work__text {
@@ -301,7 +304,7 @@ hr {
     padding-left: 5px;
 }
 .block-work__list {
-    color: #ff6b08;
+    color: var(--orange-color);
 }
 .block-work__item {
     list-style-type: disc;
@@ -321,7 +324,7 @@ hr {
     
 }
 .block-projects__list {
-    color: #ff6b08;
+    color: var(--orange-color);
     line-height: calc(24 / 14 * 100%);    
 }
 .block-projects__item {
@@ -329,7 +332,7 @@ hr {
     list-style-position: inside;
 }
 .block-projects__item a{
-    color: #ff6b08;
+    color: var(--orange-color);
     font-weight: 700;
     /* color: #252B42; */
     text-decoration: underline;
@@ -347,7 +350,7 @@ hr {
     line-height: calc(20 / 14 * 100%);
 }
 .block-additional__list {
-    color: #ff6b08;
+    color: var(--orange-color);
 }
 .block-additional__item {
     list-style-type: disc;
