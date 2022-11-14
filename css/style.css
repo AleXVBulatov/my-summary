@@ -37,7 +37,8 @@ hr {
 /*--------------------ОБЕРТКА--------------------------------------*/
 
 :root {
-    --orange-color: #ff6b08;
+    /* --color-selection: #ff6b08; */
+    --color-selection: rgb(255, 107, 0);
 }
 .wrapper {
     min-height: 100%;
@@ -104,7 +105,7 @@ hr {
     object-fit: cover;
     border-radius: 50% 0 50% 0;
     /* border-radius: 0% 50% 0% 50% ; */
-    box-shadow: 0px 0px 00px 3px rgba(255, 107, 0, 1);
+    box-shadow: 0px 0px 00px 3px var(--color-selection);
 }   
 .sidebar__body {
 
@@ -131,10 +132,9 @@ hr {
 .contacts__list li{
     /* padding: 5px 0; */
 }
-
-.contacts__phone {
+.contacts__item-phone {
 }
-.contacts__phone:before {
+.contacts__item-phone:before {
     color: rgb(121, 252, 128);
 }
 .contacts__link {
@@ -144,14 +144,14 @@ hr {
     text-decoration: underline;
     /* font-style: italic; */
 }
-.contacts__email {
+.contacts__item-email {
 }
-.contacts__email::before {
-    color: var(--orange-color);
+.contacts__item-email::before {
+    color: var(--color-selection);
 }
-.contacts__fb {
+.contacts__item-fb {
 }
-.contacts__fb::before {
+.contacts__item-fb::before {
     color: rgb(45, 119, 255);
 }
 
@@ -172,7 +172,7 @@ hr {
     padding: 0 0 10px 0;
 }
 .skils__list {
-    color: var(--orange-color);
+    color: var(--color-selection);
     line-height: calc(24 / 14 * 100%);
 }
 .skils__item {
@@ -234,7 +234,7 @@ hr {
     margin-bottom: 20px;
 }
 .block__university {
-    color: var(--orange-color);
+    color: var(--color-selection);
     font-weight: 700;
     padding: 0px 15px;    
 }
@@ -285,7 +285,7 @@ hr {
     font-weight: 700;
 }
 .block-work__title a{
-    color: var(--orange-color);
+    color: var(--color-selection);
     text-decoration: underline;
 }
 .block-work__text {
@@ -304,7 +304,7 @@ hr {
     padding-left: 5px;
 }
 .block-work__list {
-    color: var(--orange-color);
+    color: var(--color-selection);
 }
 .block-work__item {
     list-style-type: disc;
@@ -324,7 +324,7 @@ hr {
     
 }
 .block-projects__list {
-    color: var(--orange-color);
+    color: var(--color-selection);
     line-height: calc(24 / 14 * 100%);    
 }
 .block-projects__item {
@@ -332,7 +332,7 @@ hr {
     list-style-position: inside;
 }
 .block-projects__item a{
-    color: var(--orange-color);
+    color: var(--color-selection);
     font-weight: 700;
     /* color: #252B42; */
     text-decoration: underline;
@@ -350,7 +350,7 @@ hr {
     line-height: calc(20 / 14 * 100%);
 }
 .block-additional__list {
-    color: var(--orange-color);
+    color: var(--color-selection);
 }
 .block-additional__item {
     list-style-type: disc;
