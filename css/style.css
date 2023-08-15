@@ -286,7 +286,7 @@ hr {
   line-height: calc(20 / 14 * 100%);
 }
 .body-education__block:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .block__university {
@@ -334,7 +334,7 @@ hr {
   line-height: calc(20 / 14 * 100%);
 }
 .body-work__block-work:not(:last-child) {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .block-work__title {
