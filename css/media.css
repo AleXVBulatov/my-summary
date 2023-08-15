@@ -24,6 +24,9 @@
   .info {
     flex: 0 0 100%;
   }
+  ._inner-container {
+    padding: 20px 20px 20px 20px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -32,8 +35,5 @@
   }
   ._container {
     padding: 0;
-  }
-  ._inner-container {
-    margin: 20px 20px 20px 20px;
   }
 }
