@@ -7,30 +7,36 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/iconfonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>My summary</title>
   </head>
   <body>
-    <!--main container-->
     <div class="wrapper">
       <div class="page__main-block main-block">
         <div class="main-block__container _container">
           <div class="main-block__body">
             <aside class="main-block__sidebar sidebar">
-              <img class="sidebar__photo _ibg" src="img/my_photo.jpg" alt="my photo" />
+              <div class="sidebar__photo">
+                <img class="_ibg" src="img/my_photo.jpg" alt="my photo" />
+              </div>
               <div class="sidebar__body body-sidebar">
                 <div class="body-sidebar__contacts contacts">
                   <h3 class="contacts__title">Contacts:</h3>
                   <ul class="contacts__list">
-                    <li class="contacts__item-phone fa-solid fa-square-phone">
-                      <a href="tel:+380677440563" class="contacts__link">+38 (067) 744 05 63</a>
+                    <li class="contacts__item-location fa-solid fa-location-dot">
+                      <span>Ukraine, Odessa</span>
+                    </li>
+                    <li class="contacts__item-linkedin fa-brands fa-linkedin">
+                      <a href="https://www.linkedin.com/in/alexey-bulatov/" class="contacts__link">Alexey Bulatov</a>
                     </li>
                     <li class="contacts__item-email fa-solid fa-square-envelope">
                       <a href="mailto:bulatov.a.v.89@gmail.com" class="contacts__link">bulatov.a.v.89@gmail.com</a>
                     </li>
-                    <li class="contacts__item-fb fa-brands fa-square-facebook">
-                      <a href="https://www.facebook.com/profile.php?id=100028146183408" target="_blank" class="contacts__link"
-                        >Bulatov A. V.</a
-                      >
+                    <li class="contacts__item-telegram fa-brands fa-telegram">
+                      <a href="https://t.me/AleXVBulatov" class="contacts__link">+38 (067) 744 05 63</a>
+                    </li>
+                    <li class="contacts__item-github fa-brands fa-github">
+                      <a href="https://github.com/AleXVBulatov" class="contacts__link">AleXVBulatov</a>
                     </li>
                   </ul>
                 </div>
@@ -38,14 +44,17 @@
                   <h3 class="skils__title">Tech Skills:</h3>
                   <ul class="skils__list">
                     <li class="skils__item"><span class="skils__text">React</span></li>
+                    <li class="skils__item"><span class="skils__text">Redux</span></li>
                     <li class="skils__item"><span class="skils__text">NodeJS</span></li>
+                    <li class="skils__item"><span class="skils__text">Express</span></li>
                     <li class="skils__item"><span class="skils__text">Webpack</span></li>
+                    <li class="skils__item"><span class="skils__text">MongoDB</span></li>
                     <li class="skils__item"><span class="skils__text">JavaScript</span></li>
                     <li class="skils__item"><span class="skils__text">Bootstrap5</span></li>
                     <li class="skils__item"><span class="skils__text">Handlebars</span></li>
                     <li class="skils__item"><span class="skils__text">Git, GitHub</span></li>
-                    <li class="skils__item"><span class="skils__text">HTML5, CSS3</span></li>
                     <li class="skils__item"><span class="skils__text">SCSS, SASS</span></li>
+                    <li class="skils__item"><span class="skils__text">HTML5, CSS3</span></li>
                   </ul>
                 </div>
                 <div class="body-sidebar__soft-skils skils">
@@ -53,7 +62,7 @@
                   <ul class="skils__list">
                     <li class="skils__item"><span class="skils__text">Analytical mind</span></li>
                     <li class="skils__item"><span class="skils__text">Attention to details</span></li>
-                    <li class="skils__item"><span class="skils__text">Liability </span></li>
+                    <!-- <li class="skils__item"><span class="skils__text">Liability </span></li> -->
                     <li class="skils__item"><span class="skils__text">Team player</span></li>
                   </ul>
                 </div>
@@ -69,39 +78,92 @@
             </aside>
 
             <main class="main-block__info info">
-              <div class="info__about-me _inner-container">
+              <section class="info__about-me _inner-container">
                 <!-- <h2 class="about-me__sub-title">Front-End Developer</h2> -->
+                <h1 class="about-me__main-title">Bulatov Alexey</h1>
                 <h2 class="about-me__sub-title">Full-Stack Developer</h2>
-                <h1 class="about-me__title">Bulatov Alexey</h1>
+                <h3 class="about-me__title _title">Summary</h3>
                 <p class="about-me__text">
-                  Hi! My name is Alexei. I am 34 y.o., I live in Odessa. I worked as a design engineer in a construction company
-                  for more than 8 years. Recently I got interested in IT and decided to change my profession. I have been studying
-                  frontend direction for about one year. And open for new challenges in this direction.
+                  I worked as a design engineer in a construction company for more than 8 years. Recently I got interested in IT
+                  and decided to change my direction. I have been studying frontend direction more than one year. I have
+                  experience in front-end web development, with a focus on JavaScript. Experience in modern JavaScript frameworks,
+                  such as React. Proficiency in HTML5, CSS3, SCSS, responsive design and related web technologies. Experience with
+                  front-end build tools and package managers, such as Webpack, Babel, and npm. Experience with TypeScript and with
+                  Node.js (express framework). I have the ability to learn quickly and a passion for overcoming obstacles. I am
+                  looking for a job as a front-end/full-stack developer.
                 </p>
-              </div>
+              </section>
               <hr />
-              <div class="info__education _inner-container">
+              <section class="info__projects _inner-container">
+                <h3 class="projects__title _title">Projects</h3>
+                <div class="body-projects__block-projects">
+                  <ul class="block-projects__list">
+                    <li class="block-projects__item">
+                      <a href="https://alexvbulatov.github.io/Kate-Radisson" class="block-projects__item-link">Kate-Radisson</a>
+                      <p class="block-projects__item-text">
+                        Adaptive and responsive website for IT recruiting agency. Used HTML, CSS, JavaScript, Swiper Slider to
+                        develop the site. The site indicates the advantages of cooperation, helps to find a client and a
+                        candidate. A list of vacancies is presented. There is an opportunity to calculate the cost of the agency's
+                        services.
+                      </p>
+                    </li>
+                    <li class="block-projects__item">
+                      <a href="https://alexvbulatov.github.io/Logo-Type/" class="block-projects__item-link">Law Types</a>
+                      <p class="block-projects__item-text">
+                        Adaptive website for lawyers. Used HTML, CSS, JavaScript, Slick Slider, Jquery to develop the site.
+                        Website about the company, services and news.
+                      </p>
+                    </li>
+                    <li class="block-projects__item">
+                      <a href="https://alexvbulatov.github.io/todo-list/" class="block-projects__item-link">Todo list</a>
+                      <p class="block-projects__item-text">
+                        Adaptive application for todo lists. Used HTML, CSS, JavaScript to develop the site. Application for notes
+                        with the ability to add, edit, delete tasks.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="info__education _inner-container">
                 <h3 class="education__title _title">Education</h3>
                 <div class="education__body body-education">
                   <div class="body-education__block">
+                    <h4 class="block__university">
+                      Udemy
+                      <span>(JavaScript, React, NodeJS)</span>
+                    </h4>
+                    <div class="block__faculty faculty-block">
+                      <p class="faculty-block__time-interval">August 2022 - March 2023</p>
+                      <p class="faculty-block__country">Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="body-education__block">
+                    <h4 class="block__university">
+                      SkillUP
+                      <span>(Full Stack Developer)</span>
+                    </h4>
+                    <div class="block__faculty faculty-block">
+                      <p class="faculty-block__time-interval">March 2021 - July 2021</p>
+                      <p class="faculty-block__country">Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="body-education__block">
                     <h4 class="block__university">Odessa State Academy of Civil Engineering and Architecture</h4>
                     <div class="block__faculty faculty-block">
-                      <p class="faculty-block__title">Heat and ventilation:</p>
                       <p class="faculty-block__time-interval">September 2011 - June 2013</p>
-                      <p class="faculty-block__country">Ukraine.</p>
+                      <p class="faculty-block__country">Ukraine</p>
                     </div>
                   </div>
                   <div class="body-education__block">
                     <h4 class="block__university">Odessa State Academy of Refrigeretion</h4>
                     <div class="block__faculty faculty-block">
-                      <p class="faculty-block__title">Refrigeration machines and installations:</p>
                       <p class="faculty-block__time-interval">September 2006 - June 2011</p>
-                      <p class="faculty-block__country">Ukraine.</p>
+                      <p class="faculty-block__country">Ukraine</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="info__work _inner-container">
+              </section>
+              <section class="info__work _inner-container">
                 <h3 class="work__title _title">Work Experience</h3>
                 <div class="work__body body-work">
                   <div class="body-work__block-work">
@@ -113,13 +175,6 @@
                       <p class="text__interval">May 2020 - October 2022</p>
                       <p class="text__country">Ukraine</p>
                     </div>
-                    <ul class="block-work__list">
-                      <li class="block-work__item">
-                        <span>Develop constituent parts of the information model in connection with specific tasks.</span>
-                      </li>
-                      <li class="block-work__item"><span>Drawings production.</span></li>
-                      <li class="block-work__item"><span>Creating component libraries.</span></li>
-                    </ul>
                   </div>
                   <div class="body-work__block-work">
                     <h4 class="block-work__title">
@@ -130,11 +185,6 @@
                       <p class="text__interval">March 2014 - May 2020</p>
                       <p class="text__country">Ukraine</p>
                     </div>
-                    <ul class="block-work__list">
-                      <li class="block-work__item"><span>Calculation of structures.</span></li>
-                      <li class="block-work__item"><span>Drawings production.</span></li>
-                      <li class="block-work__item"><span>Author's supervision - site visits.</span></li>
-                    </ul>
                   </div>
                   <div class="body-work__block-work">
                     <h4 class="block-work__title">
@@ -145,42 +195,24 @@
                       <p class="text__interval">October 2011 - February 2014</p>
                       <p class="text__country">Ukraine</p>
                     </div>
-                    <ul class="block-work__list">
-                      <li class="block-work__item"><span>Control of thermal appliances.</span></li>
-                      <li class="block-work__item"><span>Сontrol of heating points.</span></li>
-                      <li class="block-work__item"><span>Hydraulic tests of heating points.</span></li>
-                    </ul>
                   </div>
                 </div>
-              </div>
-              <div class="info__projects _inner-container">
-                <h3 class="projects__title _title">Projects</h3>
-                <div class="body-projects__block-projects">
-                  <ul class="block-projects__list">
-                    <li class="block-projects__item">
-                      <a href="https://github.com/AleXVBulatov">https://github.com/AleXVBulatov</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="info__additional _inner-container">
+              </section>
+              <section class="info__additional _inner-container">
                 <h3 class="additional__title _title">Additional Information</h3>
                 <div class="body-additional__block-additional">
                   <ul class="block-additional__list">
-                    <li class="block-additional__item"><span>I guarantee the safety of corporate secrets.</span></li>
-                    <li class="block-additional__item"><span>Good health.</span></li>
-                    <li class="block-additional__item"><span>Sports lifestyle.</span></li>
+                    <li class="block-additional__item">
+                      <span>Hobbies (badminton, voleyball, table tennis, running, modeling).</span>
+                    </li>
+                    <li class="block-additional__item"><span>Take part in sport events.</span></li>
                   </ul>
                 </div>
-              </div>
+              </section>
             </main>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <a href="https://www.facebook.com/profile.php?id=100028146183408" target="_blank">
-    <img class="sidebar__photo _ibg" src="img/my_photo.jpg" alt="my photo">
-  </a> -->
   </body>
 </html>
