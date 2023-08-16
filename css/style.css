@@ -34,7 +34,7 @@ hr {
 ._title {
   color: #252b42;
   font-size: 1.5em;
-  line-height: calc(24 / 14 * 100%);
+  line-height: calc(24 / 20 * 100%);
   font-weight: 700;
   padding: 0 0 15px 0;
   text-decoration: underline;
@@ -290,12 +290,11 @@ hr {
 }
 
 .block__university {
-  color: var(--color-selection);
+  color: var(--color-main);
   font-weight: 700;
 }
 .block__university span {
-  color: var(--color-main);
-  /* color: var(--color-main); */
+  color: var(--color-selection);
 }
 
 .block__faculty {
@@ -339,9 +338,10 @@ hr {
 
 .block-work__title {
   font-weight: 700;
+  color: var(--color-selection);
 }
 .block-work__title a {
-  color: var(--color-selection);
+  color: var(--color-main);
   text-decoration: underline;
 }
 
@@ -349,7 +349,7 @@ hr {
   display: flex;
   justify-content: space-between;
   color: rgb(180, 180, 180);
-  padding: 5px 0 5px 0;
+  padding: 0;
 }
 
 .text__interval {
