@@ -169,6 +169,17 @@ hr {
   color: rgb(255, 255, 255);
 }
 
+.contacts__item-codewars {
+}
+.contacts__item-codewars::before {
+  content: "gf";
+  background-image: url("../img/logo-codewars.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+}
+
 .body-sidebar__tech-skils {
 }
 
