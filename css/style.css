@@ -65,7 +65,7 @@ hr {
 
 .main-block__body {
   display: flex;
-  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5); */
   overflow: hidden;
 }
 
