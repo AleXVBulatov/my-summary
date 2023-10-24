@@ -28,7 +28,7 @@ hr {
   max-width: 1000px;
   margin: 0px auto; /*выставить блок по центру*/
   box-sizing: content-box; /*чтобы padding не влиял на ширину контента max-width: 1046px;*/
-  padding: 0px 15px; /*чтобы при сужении экрана контент не прилипал к краю экрана*/
+  /* padding: 0px 15px;  */
 }
 
 ._title {
@@ -54,7 +54,7 @@ hr {
 
 /* #region main-block__container */
 .page__main-block {
-  margin: 50px 0 50px 0;
+  /* margin: 50px 0 50px 0; */
 }
 
 .main-block {
@@ -280,6 +280,11 @@ hr {
 .block-projects__item-text {
   color: var(--color-main);
   text-align: justify;
+}
+
+.block-projects__text-link a {
+  color: blue;
+  font-style: italic;
 }
 /* #endregion */
 
