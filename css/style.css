@@ -43,6 +43,11 @@ hr {
 ._inner-container {
   padding: 15px 30px 15px 30px;
 }
+
+.none {
+  display: none;
+}
+
 /* #endregion */
 
 /* #region wrapper */
